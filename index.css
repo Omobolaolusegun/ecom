@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
 }
 
 body{
@@ -40,6 +41,8 @@ h6{
     color: #D8D8D8;
 }
 
+
+
 button{
     font-size: 0.8rem;
     font-weight: 700;
@@ -53,15 +56,28 @@ button{
 
 }
 
-button:hover{
+/* button:hover{
     background-color: #D8D8D8;
-}
+} */
 
 /* .navbar-toggler{
     width: 5px;
 } */
 
+.logo{
+    background: url(ecom.png);
+    width: 100px;
+    height: 100px;
+    background-size: 120px;
+    background-repeat: no-repeat;
+    /* justify-content: center;
+    align-items: center; */
+}
 .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 
     font-size: 16px;
     top: 0;
@@ -80,25 +96,55 @@ button:hover{
   color: coral;
 }
 
-.navbar i{
-    font-size: 1.6rem;
+.navbar li{
+    list-style: none;
+    padding: 0px 60px;
+    font-size: 1.4rem;
     padding: 0 7px;
     cursor: pointer;
     font-weight: 500;
     transition: 0.3s ease;
+    justify-content: space-between;
+}
+
+.navbar ul li a{
+    /* border: thick solid red; */
+    /* display: flex; */
+    justify-content: end;
+    align-items: end;
+    /* padding: 0px 10px; */
+    margin: 15px 80px;
+}
+
+.navbar ul li a:hover{
+    transition: 0.5s;
+    text-decoration: underline;
+    /* color: red; */
+    font-weight: 800;
+}
+
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 #home{
-    background-image: url(pexels-mikael-blomkvist-8961339.jpg);
+    background-image: url(ecom.png);
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background-position: top 60px center;
+    background-position: top -250px center;
     display: flex;
+    background-repeat: no-repeat;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-}
+} 
 
 #home span{
   color: coral;
@@ -202,7 +248,7 @@ hr{
 }
 
 #banner{
-    background-image: url(pexels-mikael-blomkvist-8961339.jpg);
+    background-image: url(di1-removebg-preview.png);
     width: 100%;
     height: 60vh;
     background-size: cover;
@@ -215,11 +261,11 @@ hr{
 }
 
 #banner h4{
-    color: #D8D8D8;
+    color: #000;
 }
 
 #banner h1{
-    color: #fff;
+    color: #000;
 }
 
 #banner button{
@@ -233,18 +279,18 @@ hr{
 #product1 .pro{
     width: 23%;
     min-width: 250px;
-    padding: 10px 12px;
+    padding: 10px 10px;
     border: 1px solid #cce7d0;
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
-    margin: 15px 0;
+    margin: 13px 0;
     transition: 0.2s ease;
     position: relative;
 }
 
 #product1 .pro:hover{
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.6);
 }
 
 #product1 .pro img{
@@ -277,6 +323,7 @@ hr{
     background-image: url(jump1.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     width: 100%;
     height: 40vh;
 }
@@ -319,6 +366,7 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    /* text-align: center; */
     background-image: url(jump4.jpg);
     min-width: 580px;
     height: 50vh;
@@ -461,3 +509,13 @@ button.white{
     display: flex;
     width: 40%;
 }
+/* 
+@media (max-width: 1700px){
+    .sm-banner{
+        display: inline-block;
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 80px;
+    }
+} */
+
